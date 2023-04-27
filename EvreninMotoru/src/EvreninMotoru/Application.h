@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Corer.h"
+#include "Core.h"
 
 namespace EvreninMotoru {
 

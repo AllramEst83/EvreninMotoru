@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 #include "EvreninMotoru/Application.h"
+#include "EvreninMotoru//Log.h"
 
 //--Entrypoint----------
 #include "EvreninMotoru/EntryPoint.h"
