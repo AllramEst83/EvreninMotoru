@@ -19,7 +19,7 @@
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>EvreninMotoru</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -79,7 +79,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>EM_PLATFORM_WINDOWS;EM_BUILD_DLL;EM_Debug;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>${prj.name}\src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -100,7 +100,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>EM_PLATFORM_WINDOWS;EM_BUILD_DLL;EM_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>${prj.name}\src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -125,7 +125,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>EM_PLATFORM_WINDOWS;EM_BUILD_DLL;EM_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>${prj.name}\src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -148,8 +148,14 @@
   <ItemGroup>
     <ClInclude Include="src\EvreninMotoru.h" />
     <ClInclude Include="src\EvreninMotoru\Application.h" />
-    <ClInclude Include="src\EvreninMotoru\Core.h" />
+    <ClInclude Include="src\EvreninMotoru\Core\Base.h" />
+    <ClInclude Include="src\EvreninMotoru\Core\KeyCodes.h" />
+    <ClInclude Include="src\EvreninMotoru\Core\MouseCodes.h" />
     <ClInclude Include="src\EvreninMotoru\EntryPoint.h" />
+    <ClInclude Include="src\EvreninMotoru\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\EvreninMotoru\Events\Event.h" />
+    <ClInclude Include="src\EvreninMotoru\Events\KeyEvent.h" />
+    <ClInclude Include="src\EvreninMotoru\Events\MouseEvent.h" />
     <ClInclude Include="src\EvreninMotoru\Log.h" />
   </ItemGroup>
   <ItemGroup>

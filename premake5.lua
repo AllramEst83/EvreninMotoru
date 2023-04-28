@@ -23,13 +23,14 @@ project "EvreninMotoru"
 	}
 	
 	includedirs {
+		"${prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "10.0.22000.0"
+		systemversion "latest"
 		
 	defines {
 		"EM_PLATFORM_WINDOWS",
@@ -82,7 +83,7 @@ project "Sandbox"
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "10.0.22000.0"
+		systemversion "latest"
 
 	filter "configurations:Debug"
 		defines "EM_Debug"

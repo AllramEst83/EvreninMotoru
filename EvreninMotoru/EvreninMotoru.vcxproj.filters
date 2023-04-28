@@ -4,17 +4,41 @@
     <Filter Include="EvreninMotoru">
       <UniqueIdentifier>{E23DF020-4EFE-6B57-1739-B5D483B8B033}</UniqueIdentifier>
     </Filter>
+    <Filter Include="EvreninMotoru\Core">
+      <UniqueIdentifier>{7A5F4594-6643-06EA-CFA3-003DBBA6F06B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EvreninMotoru\Events">
+      <UniqueIdentifier>{86373DC0-72C6-C689-1BE5-DA840753D72F}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\EvreninMotoru.h" />
     <ClInclude Include="src\EvreninMotoru\Application.h">
       <Filter>EvreninMotoru</Filter>
     </ClInclude>
-    <ClInclude Include="src\EvreninMotoru\Core.h">
-      <Filter>EvreninMotoru</Filter>
+    <ClInclude Include="src\EvreninMotoru\Core\Base.h">
+      <Filter>EvreninMotoru\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EvreninMotoru\Core\KeyCodes.h">
+      <Filter>EvreninMotoru\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EvreninMotoru\Core\MouseCodes.h">
+      <Filter>EvreninMotoru\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\EvreninMotoru\EntryPoint.h">
       <Filter>EvreninMotoru</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EvreninMotoru\Events\ApplicationEvent.h">
+      <Filter>EvreninMotoru\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EvreninMotoru\Events\Event.h">
+      <Filter>EvreninMotoru\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EvreninMotoru\Events\KeyEvent.h">
+      <Filter>EvreninMotoru\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EvreninMotoru\Events\MouseEvent.h">
+      <Filter>EvreninMotoru\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\EvreninMotoru\Log.h">
       <Filter>EvreninMotoru</Filter>
